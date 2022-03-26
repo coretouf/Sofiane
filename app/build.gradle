@@ -23,6 +23,11 @@ android {
     buildFeatures {
         viewBinding true
     }
+    lintOptions {
+        // Downgrade severity of missing translation errors
+        warning "MissingTranslation"
+        textOutput "stdout"
+    }
 }
 
 dependencies {
